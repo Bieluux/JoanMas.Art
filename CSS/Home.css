@@ -129,7 +129,7 @@ body {
 /*EDITAMOS LA PARTE TEXTUAL DEL HOME CON SU DIV*/
 
 .cajaIntro {
-    background-color: rgb(235, 233, 233); /* Color de fondo */
+    background-color: rgb(235, 233, 233, 0.5); /* Color de fondo */
     border-radius: 20px; /* Borde redondeado */
     margin: 10px; /* Margen exterior */
     margin-top: 30px;
@@ -452,7 +452,6 @@ video {
         width: 70%; /* O el ancho deseado */
         height: auto; /* O la altura deseada */
         margin: 0 auto;
-        margin-top: -70px; /* Esto centra verticalmente el div */
     }
 
     #g {
