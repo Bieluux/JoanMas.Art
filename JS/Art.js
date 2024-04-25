@@ -87,3 +87,4 @@ function mostrarCapRoig() {
 }
 
 BotonCapRoig.onclick = mostrarCapRoig;
+

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>joanmas.art</title>
-    <link rel="icon" type="image/jpg" href="Logo.JPG">
-    <link rel="stylesheet" type="text/css" media="screen" href="Home.css">
+    <link rel="icon" type="image/jpg" href="LOGO/Logo.JPG">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS\Home.css">
 </head>
 <body>
     <nav role="navigation">
@@ -16,7 +16,6 @@
         <span></span>
         <ul id="menu">
             <a href="Home.html"><li>Home</li></a>
-            <a href="Art.html"><li>Art</li></a>
             <a href="Clothes.html"><li>Clothes</li></a>
             <a href="Info.html"><li>Info</li></a>
             <a href="Contact.html"><li>Contact</li></a>
@@ -28,20 +27,50 @@
 
 
     <br>
-    <div class="bubble-text"><img src="MagicEraser_240115_135707.PNG" width="300px"></div>
+    <div class="bubble-text"><img src="LOGO/MagicEraser_240115_135707.PNG" width="300px"></div>
     <br>
-    <div id="formulario">
-        <P class="Descripción">Para pedirnos pedidos personalizadis o algún cuadro en concreto,
-            por favor rellene el siguiente formulario:</P>
-            <form action="/procesar_compra" method="post">
-                <label for="producto">Producto a comprar:</label>
+    <div id="g">
+        <div id="formulario">
+            <div id="texto">
+                <P class="Descripción"> <strong>Para pedirnos pedidos personalizados o algún cuadro en concreto,
+                    por favor rellene el siguiente formulario:</strong></P>
+            </div>
+            
+            <div id="div1">
+                <div id="rellenar">
+                    <br>
+                <form action="https://forsubmit.co/youremail@gmail.com" method="post">
+                    <label for="Name">Name:</label>
+                    <br>
+                    <br>
+                    <input type="text" id="Name" name="Name" placeholder="Name" required>
+                    <label for="email">Email Address:</label>
+                    <br>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Email" style="width: 300px; height: 40px;" required>
+                    <br>
+                    <br>
+                    
+                    <label for="mensaje">Mensaje:</label>
+                    <br>
+                    <br>
+        
+                    <textarea name="mensaje" id="mensaje" cols="30" style="width: 300px; height: 100px;"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
                 <br>
-                <br>
-                <input type="text" id="producto" name="producto" placeholder="Escribe el nombre del producto" required>
+                </div>
+                    <div id="video">
+                        <video src="VIDEO/video-output-DE4F29AC-3B28-4609-9A74-E07D5A1DA803.MOV"  autoplay muted style="align-items: center;" width="300px" height="600px"></video>
+                    </div>
+            </div>
+            
                 
-                <input type="submit" value="Comprar">
-            </form>
-            <br>
+            </div>
     </div>
+    
+
 </body>
 </html>

@@ -1,0 +1,582 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Box-sizing border-box para incluir el padding y border en el ancho y alto del elemento */
+}
+/*-------------------------------------------------------------------------------------------------------------------------*/
+/* Estilos del cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.freepik.com/premium-vector/abstract-alcohol-ink-texture-grey-tone-marble-style-background_176697-807.jpg?w=900); /* Fondo del cuerpo */
+    font-family: "Avenir Next", "Avenir", sans-serif; /* Fuente del cuerpo */
+}
+/*EMPEZAMOS HA EDITAR EL INICIO/HOME*/
+
+/*----------------------------------------------------------------------------------------------------*/
+/*EDITAMOS EL TITULO PRINCIPAL DE LA WEB*/
+.bubble-text {
+    text-align: center; /* Texto centrado */
+    margin-top: -35px; /* Desplazamiento hacia arriba */
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+/* Estilos del menú de navegación */
+#menuToggle {
+    display: block; /* Mostrar como bloque */
+    position: relative; /* Posición relativa */
+    top: 50px; /* Desplazamiento hacia abajo */
+    left: 50px; /* Desplazamiento hacia la derecha */
+    z-index: 1; /* Capa z */
+    -webkit-user-select: none; /* No seleccionable en webkit */
+    user-select: none; /* No seleccionable */
+    margin-left: -30px; /* Margen izquierdo negativo */
+    margin-top: -20px; /* Margen superior negativo */
+}
+
+#menuToggle a {
+    text-decoration: none; /* Sin subrayado */
+    color: #232323; /* Color de texto */
+    transition: color 0.3s ease; /* Transición de color */
+}
+
+#menuToggle a:hover {
+    color: tomato; /* Color de texto al pasar el ratón */
+}
+
+#menuToggle input {
+    display: block; /* Mostrar como bloque */
+    width: 40px; /* Ancho */
+    height: 32px; /* Alto */
+    position: absolute; /* Posición absoluta */
+    top: -7px; /* Desplazamiento hacia arriba */
+    left: -5px; /* Desplazamiento hacia la izquierda */
+    cursor: pointer; /* Cursor de ratón */
+    opacity: 0; /* Ocultar */
+    z-index: 2; /* Capa z */
+    -webkit-touch-callout: none; /* No permitir el menú de llamada táctil en webkit */
+}
+
+#menuToggle span {
+    display: block; /* Mostrar como bloque */
+    width: 33px; /* Ancho */
+    height: 4px; /* Alto */
+    margin-bottom: 5px; /* Margen inferior */
+    position: relative; /* Posición relativa */
+    background: #8e8d8d; /* Color de fondo */
+    border-radius: 3px; /* Borde redondeado */
+    z-index: 1; /* Capa z */
+    transform-origin: 4px 0px; /* Origen de la transformación */
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease; /* Transición */
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%; /* Origen de la transformación */
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%; /* Origen de la transformación */
+}
+
+#menuToggle input:checked ~ span {
+    opacity: 1; /* Opacidad */
+    transform: rotate(45deg) translate(-2px, -1px); /* Transformación */
+    background: #232323; /* Color de fondo */
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0; /* Ocultar */
+    transform: rotate(0deg) scale(0.2, 0.2); /* Transformación */
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px); /* Transformación */
+}
+
+#menu {
+    position: absolute; /* Posición absoluta */
+    width: 300px; /* Ancho */
+    margin: -100px 0 0 -50px; /* Margen */
+    padding: 50px; /* Relleno */
+    padding-top: 125px; /* Relleno superior */
+    background: #ededed; /* Color de fondo */
+    list-style-type: none; /* Sin estilo de lista */
+    -webkit-font-smoothing: antialiased; /* Suavizado de fuente en webkit */
+    transform-origin: 0% 0%; /* Origen de la transformación */
+    transform: translate(-100%, 0); /* Transformación */
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0); /* Transición */
+}
+
+#menu li {
+    padding: 10px 0; /* Relleno */
+    font-size: 22px; /* Tamaño de fuente */
+}
+
+#menuToggle input:checked ~ ul {
+    transform: none; /* Ninguna transformación */
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*IMAGEN PRINCIPAL*/
+#imagenInicio {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -70px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+/*EDITAMOS LA PARTE TEXTUAL DEL HOME CON SU DIV*/
+
+.cajaIntro {
+    background-color: rgb(235, 233, 233); /* Color de fondo */
+    border-radius: 20px; /* Borde redondeado */
+    margin: 10px; /* Margen exterior */
+    margin-top: 30px;
+}
+
+.intro {
+    text-align: justify; /* Texto justificado */
+    margin: 30px; /* Margen exterior */
+}
+/*---------------------------------------------------------------------------------------------*/
+/*EDITAMOS EL TITULO DE LAS OBRAS MÁS RELEVANTES*/
+.div2 > h2{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+/* Estilos del carrusel de la página de inicio */
+.slider-box {
+    overflow: hidden; /* Ocultar el desbordamiento */
+    width: 100%; /* Ancho */
+}
+
+.slider-box ul {
+    display: flex; /* Mostrar como flex */
+    padding: 0; /* Relleno */
+    transition: transform 0.5s ease; /* Transición */
+}
+
+.slider-box li {
+    flex: 0 0 100%; /* Flexible */
+    list-style: none; /* Sin estilo de lista */
+}
+
+.slider-box img {
+    width: 100%; /* Ancho */
+    height: auto; /* Altura automática */
+}
+
+.imagenes {
+    margin: 20px; /* Margen */
+}
+
+.fotografias > .logo > .div2 {
+    margin-left: 20px; /* Margen izquierdo */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*CSS DE LA PARTE DE ARTE*/
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* PARERTE DE LAS IMAGENES */
+#imag {
+    position: relative; /* Posición relativa */
+    margin-top: -60px; /* Margen superior */
+    margin-left: 50px; /* Margen izquierdo */
+    margin-right: 50px; /* Margen derecho */
+}
+
+#imag li {
+    position: relative; /* Posición relativa */
+    list-style: none; /* Sin estilo de lista */
+    margin-bottom: 20px; /* Margen inferior */
+    text-align: center; /* Texto centrado */
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/*PARTE DEL TEXTO Y BOTON DE VER MAS SOBRE EL CUADRO*/
+
+.text {
+    position: absolute; /* Posición absoluta */
+    top: 50%; /* Desde arriba al 50% */
+    left: 50%; /* Desde la izquierda al 50% */
+    transform: translate(-50%, -50%); /* Centrar */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 10px; /* Relleno */
+    color: white; /* Color de texto */
+}
+
+.text h2 {
+    margin: 0; /* Sin margen */
+}
+
+.text button {
+    background-color: transparent; /* Fondo transparente */
+    color: white; /* Color de texto */
+    border: 2px solid white; /* Borde blanco */
+    padding: 5px 10px; /* Relleno */
+    cursor: pointer; /* Cursor */
+}
+
+.img-adaptable {
+    max-width: 100%; /* Ancho máximo */
+    height: auto; /* Altura automática */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+.text button:hover {
+    color: rgb(183, 173, 173); /* Color de texto al pasar el ratón */
+    border: 2px solid rgb(183, 173, 173); /* Borde al pasar el ratón */
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/*PARTE DE VER MAS PARA HACER QUE LAS FOTOS SE AGRANDEN AL MOVER EL RATON*/
+
+section {
+    display: flex; /* Mostrar como flex */
+    width: 600px; /* Ancho */
+    height: 430px; /* Alto */
+}
+
+section img {
+    width: 0px; /* Ancho inicial */
+    flex-grow: 1; /* Crecimiento flexible */
+    object-fit: cover; /* Ajustar objeto */
+    opacity: .8; /* Opacidad */
+    transition: .5s ease; /* Transición */
+}
+
+section img:hover {
+    cursor: crosshair; /* Cursor al pasar el ratón */
+    width: 300px; /* Ancho al pasar el ratón */
+    opacity: 1; /* Opacidad al pasar el ratón */
+    filter: contrast(120%); /* Contraste */
+}
+
+section {
+    margin-top: -80; /* Margen superior */
+}
+
+
+
+section {
+    width: 100%; /* Ancho del 100% */
+    height: 50vh; /* Alto del 50% de la ventana */
+}
+#Mediterrani,
+#Caliu,
+#Embat,
+#Tramuntana,
+#CapRoig,
+#Onada{
+    display: none; /* Ocultar */
+    margin-left: 10%; /* Margen izquierdo */
+    margin-right: 10%; /* Margen derecho */
+}
+#Onada > h2,
+#Mediterrani > h2,
+#Caliu > h2,
+#Embat > h2,
+#Tramuntana > h2,
+#CapRoig > h2 {
+    text-align: center; /* Texto centrado */
+    margin-top: -70px; /* Margen superior */
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+/*COMO SE HA DE VER LA DESCRIPCION DE LOS CUADROS*/
+
+.Descripción1 {
+    background-color: rgb(235, 233, 233); /* Color de fondo */
+    border-radius: 20px; /* Borde redondeado */
+    margin: 10px; /* Margen */
+    text-align: justify; /* Texto justificado */
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*PAGINA DE COMPRAR ACCESORIOS DE ARTE*/
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*EDICION DE COMO QUIERO VER LAS FOTOS DE LOS ACCESORIOS*/
+
+#ropa {
+    text-align: center;
+    margin-top: -60px;
+}
+
+#ropa > div {
+
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+#ropa img {
+    max-width: 250px; /* Puedes ajustar este valor según tus necesidades */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+/*---------------------------------------------------------------------------------------------*/
+
+/*APARTADO DEL BOTON COMPRAR*/
+
+#ropa > div > #comprar{
+    margin: 10px;
+    padding: 5px 10px; /* Relleno */
+    border-radius: 5px;
+    border: #b6b6b6;
+
+}
+
+#ropa > div > #comprar:hover{
+    background-color: #cecbcb;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*PAGINA DE CONTACT CON LO DEL FORMULARIO*/
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*EDITAMOS TODO EL DIV QUE CONTENDRÁ EL FORMULARIO*/
+
+#formulario{
+    background-color: rgb(235, 233, 233); /* Color de fondo */
+    border-radius: 20px; /* Borde redondeado */
+    margin: 30px; /* Margen */
+    text-align: justify; /* Texto justificado */
+    padding: 3px;
+    margin-top: -60px;
+
+
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*EDITAMOS EL FORMULARIO*/
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #979c98;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #828783;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*EDITAMOS EL DIV Y EL TEXTO QUE HAY EN EL FORMULARIO*/
+
+#texto{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+.Descripción{
+
+    text-align: center;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*EDITAMOS EL VIDEO DEL FORMULARIO*/
+
+video {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+/*INICIAMOS EL RESPONSIVE DEL ORDENADOR A PARTIR DE LOS 1300PX*/
+
+@media screen and (min-width: 1300px){
+    #div1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #rellenar, #video {
+        text-align: center;
+    }
+    
+    #rellenar form {
+        width: 300px;
+    }
+    
+    #video {
+        width: 300px;
+    }
+
+    #rellenar{
+        margin-top: 100px;
+        margin-right: 100px;
+    }
+
+    .contenedor1 {
+        width: 100%; /* O el ancho deseado */
+        height: auto; /* O la altura deseada */
+        text-align: center;
+    }
+    
+    .cajaIntro {
+        width: 70%; /* O el ancho deseado */
+        height: auto; /* O la altura deseada */
+        margin: 0 auto;
+        margin-top: -70px; /* Esto centra verticalmente el div */
+    }
+
+    #g {
+        width: 100%; /* O el ancho deseado */
+        height: auto; /* O la altura deseada */
+        text-align: center;
+    }
+    
+    #formulario {
+        width: 60%; /* O el ancho deseado */
+        height: auto; /* O la altura deseada */
+        margin: 0 auto;
+        margin-top: -70px; /* Esto centra verticalmente el div */
+    }
+    #i {
+        width: 100%; /* O el ancho deseado */
+        height: auto; /* O la altura deseada */
+        text-align: center;
+    }
+    
+    #imag{
+        width: 50%; /* O el ancho deseado */
+        height: auto; /* O la altura deseada */
+        margin: 0 auto;
+        margin-top: -70px; /* Esto centra verticalmente el div */
+    }
+
+    .imagenes {
+        margin: 0 auto; /* Margen automático izquierda y derecha */
+        width: 500px; /* Ancho */
+        height: 900px; /* Alto */
+    }
+
+    #caja {
+        display: flex;
+        justify-content: center;
+        height: 720px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: -50px;
+        border-radius: 20px;
+    
+    }
+    
+    .contenedor, .fotografias {
+        flex: 1;
+    }
+    
+    .contenedor {
+        margin-top: 200px;
+    }
+    .cajaIntro{
+        background-color: rgb(235, 233, 233, 0.5);
+    }
+    #caja{
+        background-color:  rgba(200, 199, 199, 0.5);
+        margin-top: 40px;
+        }
+    .cajaIntro, .div2, .imagenes {
+        margin: 0 auto; /* Centrar horizontalmente */
+        text-align: center; /* Centrar contenido */
+    }
+    
+    .fotografias {
+        display: flex;
+        flex-direction: column;
+        margin-left: -70px;
+        margin-top: 50px;
+    }
+    
+    .fotografias .imagenes {
+        margin-top: 20px; /* Espacio entre el div .logo y el div .imagenes */
+    }
+    #imagenInicio {
+        display: block;
+        width: 100%;
+        height: 800px;
+        margin-top: -70px;
+    }
+    #ImgInicio{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .imagenes > .slider-box > ul > li > img{
+        border-radius: 100%;
+    }
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*INICIAMOS EL RESPONSIVE DEL MOVIL COMO MAX 900PX*/
+
+@media screen and (max-width: 1299px) {
+    #ropa {
+        text-align: center;
+        margin-top: -60px;
+    }
+    
+    #ropa > div {
+
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+    
+    #ropa img {
+        max-width: 250px; /* Puedes ajustar este valor según tus necesidades */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    #ropa > div > #comprar{
+        margin: 10px;
+        padding: 5px 10px; /* Relleno */
+        border-radius: 5px;
+        border: #b6b6b6;
+
+    }
+
+    #ropa > div > #comprar:hover{
+        background-color: #cecbcb;
+    }
+    .imagenes > .slider-box > ul > li > img{
+        border-radius: 100%;
+    }
+}
