@@ -178,7 +178,42 @@ body {
     margin-left: 20px; /* Margen izquierdo */
     margin-bottom: 10px; /* Margen inferior */
 }
+#contacto{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgba(211, 210, 210, 0.5);
+}
+#insta{
+    padding: 7px;
+    padding-right: 18px;
+    background-color: rgba(188, 188, 188, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+#insta > a{
+    color: #232323;
+}
 
+#ImagenCorreo{
+    margin-left: 20px;
+}
+#correo{
+    padding: 7px;
+    padding-right: 18px;
+    background-color: rgba(188, 188, 188, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+#correo> a{
+    color: #232323;
+}
 /*----------------------------------------------------------------------------------------------*/
 
 /*CSS DE LA PARTE DE ARTE*/
@@ -419,7 +454,7 @@ video {
 /*---------------------------------------------------------------------------------------------------------------*/
 /*INICIAMOS EL RESPONSIVE DEL ORDENADOR A PARTIR DE LOS 1300PX*/
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1200px){
     #div1 {
         display: flex;
         justify-content: center;
@@ -538,11 +573,35 @@ video {
     .imagenes > .slider-box > ul > li > img{
         border-radius: 100%;
     }
+
+    #contacto{
+        margin-left: 30px;
+        margin-right: 50px;
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 50px;
+        background-color: rgba(188, 188, 188, 0.5);
+    }
+
+    
+    #insta{
+        padding: 7px;
+        padding-right: 18px;
+        background-color: rgba(188, 188, 188, 0.5);
+        border-radius: 5px;
+        text-align: center;
+        display: none;
+    }
+    #insta > a{
+        color: #232323;
+    }
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
 /*INICIAMOS EL RESPONSIVE DEL MOVIL COMO MAX 900PX*/
 
-@media screen and (max-width: 1299px) {
+@media screen and (max-width: 1199px) {
     #ropa {
         text-align: center;
         margin-top: -60px;
