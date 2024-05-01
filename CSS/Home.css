@@ -638,3 +638,58 @@ video {
         border-radius: 100%;
     }
 }
+
+
+
+
+#Bolsa {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px; /* Añadido */
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    width: calc(100% - 40px); /* Añadido */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#Tienda {
+    background-color: #bcbfbc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#Tienda:hover {
+    background-color: #7a7b7a;
+}
+
+p {
+    margin: 5px 0;
+}
+
+#total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
