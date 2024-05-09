@@ -32,23 +32,23 @@
         <div>
             <br>
             <img src="IMAGENES\Bolsa.JPG" alt="" id="ImagenesClothes" >
-            <button id="comprar" class="BotonRopa">COMPRAR</button>
+            <button id="BotonBolsa" class="comprar">COMPRAR</button>
             
         </div>
         <div>
             <br>
             <img src="IMAGENES\CamiHLogoG.PNG" alt="" id="ImagenesClothes">
-            <button id="comprar">COMPRAR</button>
+            <button id="BotonCamiHL" class="comprar">COMPRAR</button>
         </div>
         <div>
             <br>
             <img src="IMAGENES\CamiLogoHCap1.PNG" alt="" id="ImagenesClothes">
-            <button id="comprar">COMPRAR</button>
+            <button id="BotonCamiHF" class="comprar">COMPRAR</button>
         </div>
         <div>
             <br>
             <img src="IMAGENES\CamiMujer.JPG" alt="" id="ImagenesClothes">
-            <button id="comprar">COMPRAR</button>
+            <button id="BotonCamiMF" class="comprar">COMPRAR</button>
         </div>
     </div>
     <br> 
@@ -59,7 +59,7 @@
             <img src="IMAGENES/Bolsa.JPG" width="250px" style="border-radius: 5px;">
             <form>
                 <label>Price:</label>
-                <p id="precio">29.98 €</p>
+                <p id="precio">15.98 €</p>
                 <br>
                 <label for="cantidad">Cantidad: </label>
                 <select id="cantidad" name="cantidad" onchange="calcularPrecio()">
@@ -73,6 +73,93 @@
                 <button id="Tienda" type="submit">COMPRAR</button>
             </form>
         </div>
+
+        <div id="CamisetaHombreLogo">
+            <img src="IMAGENES/CamiHLogoG.PNG" width="250px" style="border-radius: 5px;">
+            <form>
+                <label>Price:</label>
+                <p id="precioCamiHL">25.98 €</p>
+                <br>
+                <label for="cantidad">Cantidad: </label>
+                <select id="cantidadCamiHL" name="cantidad" onchange="calcularPrecioCamiHL()">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select><br>
+                <p>Total:</p>
+                <p id="totalCamiHL"></p>
+                <button id="Tienda" type="submit">COMPRAR</button>
+            </form>
+        </div>
+        <div id="CamisetaHombreFoto">
+            <img src="IMAGENES/CamiHLogoCap.PNG" width="250px" style="border-radius: 5px;">
+            <form>
+                <label>Price:</label>
+                <p id="precioCamiHF">25.98 €</p>
+                <br>
+                <label for="cantidad">Cantidad: </label>
+                <select id="cantidadCamiHF" name="cantidad" onchange="calcularPrecioCamiHF()">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select><br>
+                <p>Total:</p>
+                <p id="totalCamiHF"></p>
+                <button id="Tienda" type="submit">COMPRAR</button>
+            </form>
+        </div>
+
+
+        <div id="CamisetaMujerFoto">
+            <img src="IMAGENES/CamiMujer.JPG" width="250px" style="border-radius: 5px;">
+            <form>
+                <label>Price:</label>
+                <p id="precioCamiMF">25.98 €</p>
+                <br>
+                <label for="cantidad">Cantidad: </label>
+                <select id="cantidadCamiMF" name="cantidad" onchange="calcularPrecioCamiMF()">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select><br>
+                <p>Total:</p>
+                <p id="totalCamiMF"></p>
+                <button id="Tienda" type="submit">COMPRAR</button>
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
 
 

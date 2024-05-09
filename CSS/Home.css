@@ -186,12 +186,12 @@ body {
     align-items: center;
     margin-top: 10px;
     border-radius: 5px;
-    background-color: rgba(211, 210, 210, 0.5);
+    background-color: rgba(254, 254, 254, 0.5);
 }
 #insta{
     padding: 7px;
     padding-right: 18px;
-    background-color: rgba(188, 188, 188, 0.5);
+    background-color: rgba(227, 226, 226, 0.5);
     border-radius: 5px;
     text-align: center;
     display: none;
@@ -206,7 +206,7 @@ body {
 #correo{
     padding: 7px;
     padding-right: 18px;
-    background-color: rgba(188, 188, 188, 0.5);
+    background-color: rgba(227, 226, 226, 0.5);
     border-radius: 5px;
     text-align: center;
     display: none;
@@ -369,7 +369,7 @@ section {
 
 /*APARTADO DEL BOTON COMPRAR*/
 
-#ropa > div > #comprar{
+#ropa > div > .comprar{
     margin: 10px;
     padding: 5px 10px; /* Relleno */
     border-radius: 5px;
@@ -377,7 +377,7 @@ section {
 
 }
 
-#ropa > div > #comprar:hover{
+#ropa > div > .comprar:hover{
     background-color: #cecbcb;
 }
 /*------------------------------------------------------------------------------------------------------------*/
@@ -425,7 +425,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #828783;
 }
-
+input{
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+textarea{
+    border-radius: 10px;
+    border: none;
+}
 /*---------------------------------------------------------------------------------------------------------------*/
 
 /*EDITAMOS EL DIV Y EL TEXTO QUE HAY EN EL FORMULARIO*/
@@ -641,9 +649,11 @@ video {
 
 
 
-
-#Bolsa {
-    background-color: #fff;
+#body{
+    display: none; 
+}
+#Bolsa, #CamisetaHombreLogo, #CamisetaHombreFoto, #CamisetaMujerFoto{
+    background-color: rgb(229, 229, 229,0.5);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -652,10 +662,9 @@ video {
     text-align: center;
     display: none;
     position: absolute;
-    top: 65%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-bottom: 20px; /* Añadido */
 }
 
 label {
