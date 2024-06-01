@@ -195,6 +195,7 @@ body {
     border-radius: 5px;
     text-align: center;
     display: none;
+    
 }
 #insta > a{
     color: #232323;
@@ -433,6 +434,7 @@ input{
 textarea{
     border-radius: 10px;
     border: none;
+    padding: 10px;
 }
 /*---------------------------------------------------------------------------------------------------------------*/
 
@@ -442,6 +444,7 @@ textarea{
     margin-top: 20px;
     margin-left: 30px;
     margin-right: 30px;
+    font-family:'Times New Roman', Times, serif;
 
 }
 .Descripción{
@@ -650,21 +653,24 @@ video {
 
 
 #body{
-    display: none; 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    margin-top: -180px;
 }
-#Bolsa, #CamisetaHombreLogo, #CamisetaHombreFoto, #CamisetaMujerFoto{
-    background-color: rgb(229, 229, 229,0.5);
+#Bolsa, #CamisetaHombreLogo, #CamisetaHombreFoto, #CamisetaMujerFoto {
+    background-color: rgba(229, 229, 229, 0.5);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 400px;
     width: 100%;
     text-align: center;
+    margin: 10px; /* Añadido para separación entre divs */
+    position: relative;
     display: none;
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 label {
@@ -672,7 +678,7 @@ label {
 }
 
 select {
-    width: calc(100% - 40px); /* Añadido */
+    width: calc(100% - 40px);
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;

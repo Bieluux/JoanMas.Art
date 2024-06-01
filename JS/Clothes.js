@@ -48,7 +48,7 @@ var TiendaBolsa = document.getElementById('BotonBolsa');
 function mostrarBolsa() {
     TodoRopa.style.display = 'none';
     Bolsa.style.display = 'block';
-    body.style.display = 'block';
+    body.style.display = 'flex';
 }
 
 TiendaBolsa.onclick = mostrarBolsa;
@@ -61,7 +61,7 @@ var TiendaCamiHL= document.getElementById('BotonCamiHL');
 function mostrarCamiHL() {
     TodoRopa.style.display = 'none';
     CamiHL.style.display = 'block';
-    body.style.display = 'block';
+    body.style.display = 'flex';
 }
 
 TiendaCamiHL.onclick = mostrarCamiHL;
@@ -73,7 +73,7 @@ var TiendaCamiHF= document.getElementById('BotonCamiHF');
 function mostrarCamiHF() {
     TodoRopa.style.display = 'none';
     CamiHF.style.display = 'block';
-    body.style.display = 'block';
+    body.style.display = 'flex';
 }
 
 TiendaCamiHF.onclick = mostrarCamiHF;
@@ -85,7 +85,7 @@ var TiendaCamiMF= document.getElementById('BotonCamiMF');
 function mostrarCamiMF() {
     TodoRopa.style.display = 'none';
     CamiMF.style.display = 'block';
-    body.style.display = 'block';
+    body.style.display = 'flex';
 }
 
 TiendaCamiMF.onclick = mostrarCamiMF;
